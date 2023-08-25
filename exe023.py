@@ -1,0 +1,6 @@
+n = int(input('Digite um número entre 0 e 9999: '))
+n2 = str(int(10000 + n))
+print(f'O número {n} possui, {n2[1]} milhares.')
+print(f'O número {n} possui, {n2[2]} centenas.')
+print(f'O número {n} possui, {n2[3]} dezenas. ')
+print(f'O número {n} possui, {n2[4]} unidades.')
