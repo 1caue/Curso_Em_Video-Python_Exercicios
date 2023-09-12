@@ -1,12 +1,28 @@
-def notas():
-    c = 0
-    while True:
-        l = int(input('Digite a nota: '))
-        c += 1
-        if sn in 'SN':
-            sn = str(input('Quer continuar? [S/N] ')).strip().upper()
-            if sn in 'Nn':
-                break
-    print(f'Foram digitadas {c} notas\nA maior nota foi {l(max)}')
-notas()
+# Def
+def notas(*n, sit=False):
+    """
+    => Função que analisa situação de aluno
+    param n = irá realizar as contas e entregar 
+    o resultado
+    param sit = irá analizar a situação do aluno
+    e dar o resultado
+    return = irá retornar a situação
+    """
+    d = {}
+    d['total'] = sum(n)
+    d['maior'] = max(n)
+    d['menor'] = min(n)
+    d['media'] = sum(n)/len(n)
+    if sit:
+        if d['media'] >= 7:
+            d['situação'] = 'Boa'
+        elif d['media'] >= 5:
+            d['situação'] = 'Razoável'
+        else:
+            d['situação'] = 'Ruim'    
+    return d
 
+
+# Programa principal
+n = notas(5, 6, 4, sit=True)
+print(n)
