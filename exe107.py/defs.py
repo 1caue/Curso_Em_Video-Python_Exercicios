@@ -4,5 +4,6 @@ def met(n):
 def dob(n): 
    return n * 2
 
-def dez(n):
-   return n * 1.10
+def dez(n, t):
+   r = n + (n * t / 100)
+   return r 
