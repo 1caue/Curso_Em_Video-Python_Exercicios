@@ -19,7 +19,7 @@ Esses são os tipos primitivos mais comuns em Python. No entanto, Python é uma 
 - exe03 CRIE UM PROGRAMA QUE LEIA DOIS NUMEROS E MOSTRE A SOMA ENTRE ELES
 - exe04 FAÇA UM PROGRAMA QUE LEIA ALGO PELO   TECLADO E E MOSTRE NA TELA O SEU TIPO PRIMITIVO E TODAS AS INFORMAÇÕES POSITIVAS SOBRE ELE
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 7 CDP OPERADORES ARITIMÉTICOS: CONCLUIDO
 - Operadores Aritméticos
@@ -53,7 +53,7 @@ Considere U$ = R$3,27
  
  - exe012 Faça um algoritmo que leia o preço de um produto e mostre seu novo preço com 5% de desconto 
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 8 CDP UTILIZANDO MODULOS : A CONCLUIR 22:00
 Modulos são como tuplas você irá importá-las de alguma biblioteca
@@ -89,7 +89,7 @@ EXERCICIOS
 
 - exe021 = Faça um progama que abra e reproduza o áudio de um arquivo MP3 
 
-===========================================================================================================================================
+===========================================================================
  
 = AULA 9 CDP MANIPULANDO TEXTO
  FATIAMENTO
@@ -141,7 +141,7 @@ Ana Maria de Souza
 Primeiro = Ana
 Último = Souza 
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 10 CONDIÇÕES PT.1: 	
 Nessa aula o professor pegou de exemplo um caminho e montou dois trajetos
@@ -200,7 +200,7 @@ Para os inferiores ou iguais a, o aumento é de 15%
 
  exe035 - Desenvola um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 11 CORES NO TERMINAL 
  Codigo ANSI, escape sequence
@@ -247,7 +247,7 @@ Exercicios:
 
 Colocar cores em pelo menos 15 dos 35 exercicos já feitos 15/15
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 12 CONDIÇOES ANINHADAS
 
@@ -334,7 +334,7 @@ exe044 - Elabore um programa que calcule o valor a ser pago por um produto, cons
 
 exe045 - Crie um programa que faça o computador jogar jokenpô com você
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 13 ESTRUTURA FOR (LAÇOS DE REPETIÇÃO)
 
@@ -424,7 +424,7 @@ Exercicios:
  - Qual o nome do homem mais velho.
  - Quantas mulheres têm menos de 20 anos. 
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 14 ESTRUTURA DE REPETIÇÃO WHILE
 
@@ -506,7 +506,7 @@ exe064 - Crie um programa que leia vários números inteiros pelo teclado. O pro
 
 exe065 - Crie um programa que leia vários números inteiros pelo teclado. no final da execução, mostre a média entre todos os valores e qual foi o maior e mmenor valores lidos. O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores. 
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 15 INTERROMPENDO REPETIÇÕES WHILE
 
@@ -569,7 +569,7 @@ C) Qual é o nome do produto mais barato.
 exe071 - Crie um programa que simule o funcionamento de um caixa eletrônico. No inicio, pergunte ao usuário qual será o valor a ser sacado (número inteiro) e o programa vai informar quantas cédulas de cada valor serão entregues.
 OBS: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.  
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 16 VÁRIAVEIS COMPOSTAS (TUPLAS)
 
@@ -658,7 +658,7 @@ No final, mostre uma listagem de preços, organizando os dados em forma tabular.
 
 - exe077 = Crie um programa que tenha uma tupla com várias palavras (não usar acentos). Depois disso, você deve mostrar, para cada palavra, quais são as suas vogais
 
-===========================================================================================================================================
+===========================================================================
 
 Aula 17 Variáveis Compostas (Listas) Pt.1
 
@@ -747,7 +747,7 @@ c)Se o valor 5 foi digitado e está ou não na lista.
 
 - exe083 = Crie um programa onde o usuário digite uma expressão qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta. 
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 18 Variáveis compostas (Listas) Pt.2
 
@@ -836,7 +836,7 @@ c) O maior valor da segunda linha.
 
 - exe089 = Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em uma lista composta. No final, mostre um boletim contendo a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 19 VARIÁVEIS COMPOSTAS (DICIONÁRIOS)
 
@@ -983,7 +983,7 @@ D) Uma lista com todas as pessoas com idade acima da média
 
 exe095 = Aprimore o DESAFIO 093 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 20 Funções/def (pt.1)
 
@@ -1135,7 +1135,7 @@ Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
 
 exe100 = Faça um programa que tenha uma lista chamada números e duas funções chamadas sorteia() e somaPar(). A primeira função vai sortear 5 números e vai colocá-los dentro da lista e a segunda função vai mostrar a soma entre todos os valores PARES sorteados pela função anterior. 
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 21 Funções/Def (pt.2)
 
@@ -1290,7 +1290,7 @@ Adione também as docstrings da função.
 exe106 = Faça um mini-sistema que utilize o interactive help do Python. O usuário vai digitar o comando e o manual vai aparecer. Quando o usuário digitar a palavra 'FIM', o programa se encerrará
 Obs: use cores.
 
-===========================================================================================================================================
+===========================================================================
 
 AULA 22 MÓDULOS E PACOTES
 
@@ -1413,10 +1413,9 @@ exe111 =  Crie um pacote chamado utilidadesCev que tenha dois módulos interno c
 
 Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o primeiro pacote e mantenha tudo funcionando. 
 
-112 = Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários
+exe112 = Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários
 
-===========================================================================================================================================
-
+===========================================================================
 
 
 
