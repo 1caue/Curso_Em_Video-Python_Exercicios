@@ -34,8 +34,8 @@ AULA 7 CDP OPERADORES ARITIMÉTICOS: CONCLUIDO
 - Ordem de Precedência (Ordem pela qual as contas serão executadas primeiro)
    1 - ()   3 - *, /, // e- %
    2 - **   4 - + e -
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-" end=' ' " serve para não quebrar a linha 
+
+O "end=' '" serve para não quebrar a linha 
 já o " \n " serve para quebrar a linha 
 
 EXERCICIOS
@@ -126,15 +126,15 @@ AULA 9 CDP MANIPULANDO TEXTO
    
 EXERCICIOS
  
- - exe022: Crie um programa que leia o nome completo de uma pessoa e mostre: O nome com todas as letras maiúsculas, o nome com todas as letras minusculas, quantas letras ao todo(sem considerar espaços), quantas letras tem o primeiro nome 
+- exe022: Crie um programa que leia o nome completo de uma pessoa e mostre: O nome com todas as letras maiúsculas, o nome com todas as letras minusculas, quantas letras ao todo(sem considerar espaços), quantas letras tem o primeiro nome 
 
-exe23- faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos digitos separados Ex: "Digite um número:1834"
+- exe23- faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos digitos separados Ex: "Digite um número:1834"
               "Unidade: 4"
              "Dezena: 3"
               "Centena: 8"
               "Milhar: 1"
 
-exe024 - crie um programa que leia o nome e uma cidade e diga se ela começa com ou não com "SANTO"
+- exe024 - crie um programa que leia o nome e uma cidade e diga se ela começa com ou não com "SANTO"
 
 - exe025: Faça um progama que leia se o nome de uma pessoa e diga se ela tem "SILVA" no nome
  
@@ -150,75 +150,88 @@ Primeiro = Ana
 AULA 10 CONDIÇÕES PT.1: 	
 Nessa aula o professor pegou de exemplo um caminho e montou dois trajetos
 
-se carro.esquerda():         else:
-  carro.siga()                carro.siga()      
-  carro.direita()             carro.esquerda()
-  carro.siga()                carro.siga()
-  carro.direita()             carro.esquerda()
-  carro.esquerda()            carro.siga()
-  carro.siga()
-  carro.direita()
-  carro.siga() 
-              carro.pare()
+	se carro.esquerda():         else:
+	  carro.siga()                carro.siga()      
+	  carro.direita()             carro.esquerda()
+	  carro.siga()                carro.siga()
+	  carro.direita()             carro.esquerda()
+	  carro.esquerda()            carro.siga()
+	  carro.siga()
+	  carro.direita()
+	  carro.siga() 
+	                 carro.pare()
 
 Independente do caminho o primeiro e o ultimo sempre serão executados
 
 ESTRUTURA CONDICIONAL EM PYTHON
 Exemplo em Python:
 
-1. if carro.esquerda():
-     bloco true
-   else:
-     bloco false
+1: 	
 
-2. tempo = int(input('Quantos anos tem seu carro?))
-   if tempo <= 3:
-     print('carro novo')
-   else:	
-     print('carro velho')
-   print('--FIM--') 
+ 	if carro.esquerda():
+	     bloco true
+	   else:
+	     bloco false
+
+2:
+
+  	tempo = int(input('Quantos anos tem seu carro?))
+	   if tempo <= 3:
+	     print('carro novo')
+	   else:	
+	     print('carro velho')
+	   print('--FIM--') 
 
 3. Mesmo comando acima, só que menor
-   tempo = int(input('Quantos anos tem seu carro?'))
-   print('carro novo' if tempo <=3 else 'carro velho')
-   print('--FIM--')
+
+	   tempo = int(input('Quantos anos tem seu carro?'))
+	   print('carro novo' if tempo <=3 else 'carro velho')
+	   print('--FIM--') 
 
 Exercicios
  
- exe028 - Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador.
+- exe028 = Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador.
   o programa deverá escrever na tela se o usuário venceu ou perdeu
  
- exe029 - Escreva um programa que leia a velocidade de um carro, se ele ultrapassar os 80km, mostre uma mensagem dizendo que ele foi multado, a multa vai custar R$7,00 por cada km acima do limite
+- exe029 = Escreva um programa que leia a velocidade de um carro, se ele ultrapassar os 80km, mostre uma mensagem dizendo que ele foi multado, a multa vai custar R$7,00 por cada km acima do limite
 
- exe030 - Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou IMPAR
+- exe030 = Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou IMPAR
 
- exe031 - Escreva um programa que pergunte a distância de uma viagem em km. Calcule o preço da passagem, cobrando R$0,50 por Km para viagens de até 200km e R$0,45 para viagens mais longas
+- exe031 = Escreva um programa que pergunte a distância de uma viagem em km. Calcule o preço da passagem, cobrando R$0,50 por Km para viagens de até 200km e R$0,45 para viagens mais longas
 
- exe032 - Crie um programa que leia um ano qualquer e mostre se ele é BISSEXTO
+- exe032 = Crie um programa que leia um ano qualquer e mostre se ele é BISSEXTO
  
- exe033 - Faça um programa que leia três números e mostre qual é o maior e qual é o menor
+- exe033 = Faça um programa que leia três números e mostre qual é o maior e qual é o menor
 
- exe034 - Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento.
+- exe034 = Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento.
 Para salários superiores a R$1.250, calcule um aumento de 10% 
 Para os inferiores ou iguais a, o aumento é de 15%
 
- exe035 - Desenvola um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo
+- exe035 = Desenvola um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo
 
 ===========================================================================
 
 AULA 11 CORES NO TERMINAL 
  Codigo ANSI, escape sequence
-Toda vez que quiser representar uma cor usará o codigo \033[m e entre o '[' e o 'm' vc colocará o codigo desejado, e o máximo de codigo entre os dois é de 3 
+Toda vez que quiser representar uma cor usará o codigo: 
 
-EX: \033[0;33;44m o 0 é o estilo o 33 é a cor do texto e o 44 é a cor de fundo, perceba que o codigo finaliza com 'm' e começa com '\033[' 
+	\033[m e entre o '[' e o 'm' vc colocará o codigo desejado
 
-CODIGOS PARA ESTILO: 0, 1, 4 e 7
+e o máximo de codigo entre os dois é de 3. 
+
+EX: 
+
+ 	\033[0;33;44m 
+ 
+ o 0 é o estilo o 33 é a cor do texto e o 44 é a cor de fundo, perceba que o codigo finaliza com 'm' e começa com '\033[' 
+
+NÚMEROS CODIGOS PARA ESTILO: 0, 1, 4 e 7
 0 = sem estilo nenhum
 1 = coloca em negrito
 4 = ele vai sublinhar a linha
 7 = ele inverte
 
-CODIGOS PARA TEXTO: 30, 31, 32, 33, 34, 35, 36, 37 e 97
+NÚMEROS CODIGOS PARA TEXTO: 30, 31, 32, 33, 34, 35, 36, 37 e 97
 30 = Preto
 31 = Vermelho
 32 = Verde
@@ -229,7 +242,7 @@ CODIGOS PARA TEXTO: 30, 31, 32, 33, 34, 35, 36, 37 e 97
 37 = Cinza
 97 = Branco
 
-CODIGOS PARA FUNDO: 40, 41, 42, 43, 44, 45, 46, 47 e 107
+NÚMEROS CODIGOS PARA FUNDO: 40, 41, 42, 43, 44, 45, 46, 47 e 107
 40 = Preto
 41 = Vermelho
 42 = Verde
@@ -257,131 +270,137 @@ AULA 12 CONDIÇOES ANINHADAS
 
 Nessa aula o professor pegou o mesmo exemplo da aula 10, dos caminhos dos carros, porém ele adicionou mais um caminho 
 
-se carro.esquerda():         
-  carro.siga()                                        
-  carro.direita()             
-  carro.siga()                
-  carro.direita()             
-  carro.esquerda()            
-  carro.siga()
-  carro.direita()    
-  carro.siga()
+	se carro.esquerda():         
+	  carro.siga()                                        
+	  carro.direita()             
+	  carro.siga()                
+	  carro.direita()             
+	  carro.esquerda()            
+	  carro.siga()
+	  carro.direita()    
+	  carro.siga()
+	
+	senão se carro.direita():
+	  carro.siga() 
+	  carro.esquerda()
+	  carro.siga()
+	  carro.esquerda()
+	  carro.siga()
+	
+	senão
+	  carro.siga()
+	carro.pare()
 
-senão se carro.direita():
-  carro.siga() 
-  carro.esquerda()
-  carro.siga()
-  carro.esquerda()
-  carro.siga()
-
-senão
-  carro.siga()
-carro.pare()
-
-Em Python
-se = if
-senão se = elif
-senão = else
+Em Python:
+se = if |
+senão se = elif |
+senão = else.
 Você pode usar o elif quantas vezes quiser, porém não pode ter elif sem if, o else pode ser ou não usado.
 
 Exercicios:
-exe036 - Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal sabendo que ela não vai poder exceder 30% do salário ou então o empréstimo será negado.
+- exe036 = Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal sabendo que ela não vai poder exceder 30% do salário ou então o empréstimo será negado.
 
-exe037 - Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual a base de conversão:
+- exe037 = Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual a base de conversão:
 -1 para binário
 -2 para octal
 -3 para hexadecimal
 
-exe038 - Escreva um programa que leia dois números inteiros e compare-os mostrando na tela uma mensagem:
-- O primeiro valor é MAIOR
-- O segundo valor é Maior
-- Não existe valor maior os dois são iguais
+- exe038 = Escreva um programa que leia dois números inteiros e compare-os mostrando na tela uma mensagem:
+  - O primeiro valor é MAIOR
+  - O segundo valor é Maior
+  - Não existe valor maior os dois são iguais
 
-exe039 - Faça um programa que leia o ano de nascimeto de um jovem e informe, de acordo com sua idade:
-- Se ele ainda vai se alistar ao serviço militar. 
-- Se é a hora de se alistar. 
-- Se já passou do tempo de alistamento
+- exe039 = Faça um programa que leia o ano de nascimeto de um jovem e informe, de acordo com sua idade:
+  - Se ele ainda vai se alistar ao serviço militar. 
+  - Se é a hora de se alistar. 
+  - Se já passou do tempo de alistamento
 Seu programa também deverá mostrar o tempo que falta para seu alistamento ou que passou do prazo
 
-exe040 - Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando uma mensagem no final, de acordo com a média atingida:
-- Média abaixo de 5.0:
+- exe040 = Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando uma mensagem no final, de acordo com a média atingida:
+  - Média abaixo de 5.0:
 REPROVADO
-- Média entre 5.0 e 6.9:
+  - Média entre 5.0 e 6.9:
 RECUPERAÇÃO
-- Média 7.0 ou superior:
+  - Média 7.0 ou superior:
 APROVADO 
 
-exe041 - A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um atletae e mostre sua categoria, de acordo com sua idade:
-- Até 9 anos: MIRIM
-- Até 14 anos: INFANTIL
-- Até 19 anos: JUNIOR
-- Até 20 anos: SÊNIOR
-- Acima: Master
+- exe041 = A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um atletae e mostre sua categoria, de acordo com sua idade:
+  - Até 9 anos: MIRIM
+  - Até 14 anos: INFANTIL
+  - Até 19 anos: JUNIOR
+  - Até 20 anos: SÊNIOR
+  - Acima: Master
 
-exe042 - Refaça o DESAFIO 042 dos triângulos acrescentando o recurso de mostrar que tipo de triângulo será formado:
-- Equilátero: todos os lados iguais 
-- Isósceles: dois lados iguais 
-- Escaleno: todos os lados diferentes
+- exe042 = Refaça o DESAFIO 042 dos triângulos acrescentando o recurso de mostrar que tipo de triângulo será formado:
+  - Equilátero: todos os lados iguais 
+  - Isósceles: dois lados iguais 
+  - Escaleno: todos os lados diferentes
 
-exe043 - Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e mostre seu status, de acordo com a tabela abaixo:
-- Abaixo de 18.5: Abaixo do peso 
-- Entre 18.5 e 25: Peso ideal
-- 25 até 30: Sobrepeso
-- 30 até 40: Obesidade
-- Acima de 40: Obesidade mórbida
+- exe043 = Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e mostre seu status, de acordo com a tabela abaixo:
+  - Abaixo de 18.5: Abaixo do peso 
+  - Entre 18.5 e 25: Peso ideal
+  - 25 até 30: Sobrepeso
+  - 30 até 40: Obesidade
+  - Acima de 40: Obesidade mórbida
 
-exe044 - Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
-- Á vista dinheiro/cheque: 10% de desconto
-- Á vista no cartão: 5% de desconto 
-- Em até 2x no cartão: preço normal
-- 3x ou mais no cartão: 20% de juros
+- exe044 = Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
+  - Á vista dinheiro/cheque: 10% de desconto
+  - Á vista no cartão: 5% de desconto 
+  - Em até 2x no cartão: preço normal
+  - 3x ou mais no cartão: 20% de juros
 
-exe045 - Crie um programa que faça o computador jogar jokenpô com você
+- exe045 = Crie um programa que faça o computador jogar jokenpô com você
 
 ===========================================================================
 
 AULA 13 ESTRUTURA FOR (LAÇOS DE REPETIÇÃO)
 
 Nessa aula o professor ensinou sobre o laço for dando exemplo de passo a passo
-usando o seguinte exemplo
+usando o seguinte exemplo:
 
-laço c no intervalo(1, 10)
-  passo
-pega
-Em python:
-for c in range(1, 10)
-  passo 
-pega
+	laço c no intervalo(1, 10)
+	  passo
+	pega
+	Em python:
+	for c in range(1, 10)
+	  passo 
+	pega
 
-Outro exemplo: 
-laço c no intervalo(0,3)
-  passo
-  pula
-passo
-pega
-Em python:
-for c in range(0,3)
-  passo 
-  pula
-passo
-pega
+Ex:
+ 
+	Outro exemplo: 
+	laço c no intervalo(0,3)
+	  passo
+	  pula
+	passo
+	pega
+	Em python:
+	for c in range(0,3)
+	  passo 
+	  pula
+	passo
+	pega
 
-Outro exemplo:
-laço c no intervalo(0,3)
- se 0
-   pega 
- passo
- pula
-passo 
-pega
-Em python:
-for c in range(0,3)
- if 0
-   pega
- passo
- pula
-passo
-pega
+Ex:
+ 
+	Outro exemplo:
+	laço c no intervalo(0,3)
+	 se 0
+	    pega 
+	  passo
+	  pula
+	 passo 
+	 pega
+
+Ex python:
+
+	for c in range(0,3)
+	 if 0
+	    pega
+	  passo
+	  pula
+	 passo
+	 pega
 
 na estrutura range de (1, 6)  e (0, 6) 
 imagine que você está abrindo várias portas, e da porta  6 você não tem a chave, 
@@ -394,123 +413,128 @@ ou totalizando 6x ( de zero a 6)
 outra dica é: nunca esqueça em qualquer coisa que seja matemática, O ZERO TAMBÉM É NÚMERO, então sempre conte com ele.
 
 -----------------------------------
-
 Mini Calculadora em python
-s = 0
-for c in range (0, 3):
-    n = float(input('Digite um valor: '))
-    s += n
-print(s, 'Fim')
 
+	s = 0
+	for c in range (0, 3):
+	    n = float(input(f'Digite o {c+1}º valor para soma: '))
+	    s += n
+	print(f'{s:.0f}\nFim')
 -----------------------------------
 
 Exercicios:
-- exe 046 = Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artificio, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
+- exe046 = Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artificio, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
 
-- exe 047 = Crie um programa que mostre na tela todos os números PARES que estão entre 1 e 50
+- exe047 = Crie um programa que mostre na tela todos os números PARES que estão entre 1 e 50
 
-- exe 048 = Faça um programa que calcule a soma de todos os números impares que estão são múltiplos de três e que se encontram no intervalo de 1 até 500 
+- exe048 = Faça um programa que calcule a soma de todos os números impares que estão são múltiplos de três e que se encontram no intervalo de 1 até 500 
 
-- exe 049 = Refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for. 
+- exe049 = Refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for. 
 
-- exe 050 = Desenvolva um programa que leia seis números inteiros e mostre a soma apenas daqueles que forem pares. Se o valor digitado for impar, desconsidere-o
+- exe050 = Desenvolva um programa que leia seis números inteiros e mostre a soma apenas daqueles que forem pares. Se o valor digitado for impar, desconsidere-o
 
-- exe 051 = Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa progressão.
+- exe051 = Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa progressão.
 
-- exe 052 = Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
+- exe052 = Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
 
-- exe 053 = Crie um programa que leia uma frase e diga se ela é um palindromo, desconsiderando os espaços
+- exe053 = Crie um programa que leia uma frase e diga se ela é um palindromo, desconsiderando os espaços
 
-- exe 054 = Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+- exe054 = Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
 
-- exe 056 = Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos
+- exe056 = Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos
 
-- exe 057 = Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre:
- - A média de idade do grupo 
- - Qual o nome do homem mais velho.
- - Quantas mulheres têm menos de 20 anos. 
+- exe057 = Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre:
+  - A média de idade do grupo 
+  - Qual o nome do homem mais velho.
+  - Quantas mulheres têm menos de 20 anos. 
 
 ===========================================================================
 
 AULA 14 ESTRUTURA DE REPETIÇÃO WHILE
 
 Na aula 14 o professor mostrou o exemplo da ultima aula, porem dessa vez a quantidade de blocos para chegar na maça não era númerado, por isso o while tem que ser utilizado 
-ex:
-enquanto não 🍎       
-  passo
-pega
+Ex:
 
-em python:
-while not 🍎:
-  passo 
-pega 
+	enquanto não 🍎       
+	  passo
+	pega
+	
+Ex python:
 
-exemplo usando while e if´s:
-enquanto não 🍎
-  se [|]
-    passo
-  se []
-    pula
-  se 0
-    pega
-pega
+ 	while not 🍎:
+	  passo 
+	pega 
 
-em python:
-while not 🍎:
- if [|]: 
-   pega
- elif []:
-   pega
- elif 0:
-   pega
-pega
+Exemplo usando while e if´s:
 
-estrutura para girar o codigo várias vzs
-n = 'S' 
-while n == 'S':
-    f = int(input('Digite um valor: '))
-    n = str(input('Quer continuar[S/N]: ')).upper()
-print('fim')
+	enquanto não 🍎
+	  se [|]
+	    passo
+	  se []
+	    pula
+	  se 0
+	    pega
+	pega
 
-analisador de números:
-print('DIGITE 0 PARA SAIR')
-n = 1 
-par = impar = 0
-while n > 0:
-    n = int(input('Digite um valor: '))
-    if n != 0:    
-        if n % 2 == 0:
-            par += 1
-        else:
-            impar += 1
-print(f'Você digitou {par} numeros pares e {impar} numeros impares')
+Ex python:
+
+	while not 🍎:
+	 if [|]: 
+	   pega
+	 elif []:
+	   pega
+	 elif 0:
+	   pega
+	pega
+
+Estrutura para girar o codigo várias vezes
+
+	n = 'S' 
+	while n == 'S':
+	    f = int(input('Digite um valor: '))
+	    n = str(input('Quer continuar[S/N]: ')).upper()
+	print('fim')
+
+Analisador de números:
+
+	print('DIGITE 0 PARA SAIR')
+	n = 1 
+	par = impar = 0
+	while n > 0:
+	    n = int(input('Digite um valor: '))
+	    if n != 0:    
+	        if n % 2 == 0:
+	            par += 1
+	        else:
+	            impar += 1
+	print(f'Você digitou {par} numeros pares e {impar} numeros impares')
 
 Exercicios
 
-exe057 - Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a digitação novamente até ter um valor correto
+- exe057 = Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a digitação novamente até ter um valor correto
 
-exe058 - Melhore o jogo do desafio 028 onde o computador vai "pensar" em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.
+- exe058 = Melhore o jogo do desafio 028 onde o computador vai "pensar" em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.
 
-exe059 - Crie um programa que leia dois valores e mostre um menu na tela:
-[1] Somar
-[2] Multiplicar
-[3] Maior
-[4] Novos números 
-[5] Sair do programa
+- exe059 = Crie um programa que leia dois valores e mostre um menu na tela:
+- [1] Somar
+- [2] Multiplicar
+- [3] Maior
+- [4] Novos números 
+- [5] Sair do programa
 Seu programa deverá realizar a operação solicitada em cada caso.
 
-exe060 - Faça um programa que leia um número qualquer e mostre o seu fatorial
-Ex: 5! = 5 x 4 x 3 x 2 x 1 = 120
+- exe060 = Faça um programa que leia um número qualquer e mostre o seu fatorial
+-  Ex: 5! = 5 x 4 x 3 x 2 x 1 = 120
 
-exe061 - Refaça o Desafio 051, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressâo usando a estrutura while.
+- exe061 = Refaça o Desafio 051, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressâo usando a estrutura while.
 
-exe062 - Melhore o Desafio 061, perguntando para o usuário se ele quer mostrar mais alguns termos. o programa encerra quando ele disser que quer mostrar 0 termos.
+- exe062 = Melhore o Desafio 061, perguntando para o usuário se ele quer mostrar mais alguns termos. o programa encerra quando ele disser que quer mostrar 0 termos.
 
-exe063 - Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros elementos de uma sequência de Fibonacci
+- exe063 = Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros elementos de uma sequência de Fibonacci
 
-exe064 - Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag)
+- exe064 = Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag)
 
-exe065 - Crie um programa que leia vários números inteiros pelo teclado. no final da execução, mostre a média entre todos os valores e qual foi o maior e mmenor valores lidos. O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores. 
+- exe065 = Crie um programa que leia vários números inteiros pelo teclado. no final da execução, mostre a média entre todos os valores e qual foi o maior e mmenor valores lidos. O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores. 
 
 ===========================================================================
 
@@ -518,61 +542,64 @@ AULA 15 INTERROMPENDO REPETIÇÕES WHILE
 
 Nessa aula o professor usou o mesmo exemplo da aula passada, a do boneco, os blocos de grama e a maça, só que dessa vez foi inserido um troféu na plataforma e caso o boneco achasse esse troféu ele pararaia toda a sua tragetoria 
 Ex em algoritmo:
-enquanto Verdadeiro
-   se [|] 
-     passo
-   se [ ]
-     pula
-   se 0 
-     pega
-   se 🏆
-     pula 
-     interrompa 
-pega
+
+ 	enquanto Verdadeiro
+	   se [|] 
+	     passo
+	   se [ ]
+	     pula
+	   se 0 
+	     pega
+	   se 🏆
+	     pula 
+      	   pega
+	interrompa	
 
 Em python:
-while True:
-  if [|]
-    passo
-  if [ ]
-    pula
-  if 0
-    pega
-  if 🏆
-    pula 
-    break
-pega
+
+ 	while True:
+	  if [|]
+	    passo
+	  if [ ]
+	    pula
+	  if 0
+	    pega
+	  if 🏆
+	    pula 
+	    break
+	pega
 
 O comando break serve sempre para jogar o programa para fora de uma estrutura de repetição
 
 O comando break tem sempre que ficar após a pergunta para o usuário ex:
-c = s = 0
-while True:
-    c = int(input('Digite um número: '))
-    if c == 999:
-        break
-    s += c
-print(f'A soma vale {s}')
+
+ 	c = s = 0
+	while True:
+	    c = int(input('Digite um número: '))
+	    if c == 999:
+	        break
+	    s += c
+	print(f'A soma vale {s}')
 
 Exercicios
 
-exe066 - Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag) 
+- exe066 = Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag) 
 
-exe067 - Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário. O programa será interrompido quando o número solicitado for negativo
+- exe067 = Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário. O programa será interrompido quando o número solicitado for negativo
 
-exe068 - Faça um programa que jogue par ou impar com o computador. O jogo só será interrompido quando o jogador PERDER, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
+- exe068 = Faça um programa que jogue par ou impar com o computador. O jogo só será interrompido quando o jogador PERDER, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
 
-exe069 - Crie um programa que leia a idade e o sexo e várias pessoas. A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. No final, mostre:
+- exe069 = Crie um programa que leia a idade e o sexo e várias pessoas. A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. No final, mostre:
 a) quantas pessoas tem mais de 18 anos.
 b) quantos homens foram cadastrados.
 c) quantas mulheres tem menos de 20 anos.
 
-exe070 - Crie um programa que leia o nome e o preço de vários produtos. O programa deverá perguntar se o usuário vai continuar. No final mostre:
+- exe070 = Crie um programa que leia o nome e o preço de vários produtos. O programa deverá perguntar se o usuário vai continuar. No final mostre:
 A) Qual é o total gasto na compra.
 B) Quantos produtos custam mais de R$1000.
 C) Qual é o nome do produto mais barato.
 
-exe071 - Crie um programa que simule o funcionamento de um caixa eletrônico. No inicio, pergunte ao usuário qual será o valor a ser sacado (número inteiro) e o programa vai informar quantas cédulas de cada valor serão entregues.
+- exe071 = Crie um programa que simule o funcionamento de um caixa eletrônico. No inicio, pergunte ao usuário qual será o valor a ser sacado (número inteiro) e o programa vai informar quantas cédulas de cada valor serão entregues.
 OBS: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.  
 
 ===========================================================================
@@ -581,60 +608,66 @@ AULA 16 VÁRIAVEIS COMPOSTAS (TUPLAS)
 
 Tuplas são váriaveis que armazenam vários dados porem esses dados não podem ser modificados após a tupla ser criada ex:
 
-variável simples = "c = maça"
+Variável simples = "c = maça"
 
-tupla = "c = maça, banana, uva, pera"
+Tupla = "c = maça, banana, uva, pera"
 
-lembrando sempre que a enúmeração de dados na tupla sempre vai começar por zero ex:
+Lembrando sempre que a enúmeração de dados na tupla sempre vai começar por zero ex:
 
-tupla = "c = maça, banana, uva, pera"
-               0     1      2     3
+	tupla = "c = maça, banana, uva, pera"
+	               0     1      2     3
 
-se eu declarar uma váriavel assim 
-c = 'maça', 'uva', 'banana', 'pera'
+se a váriavel for declararada uma assim: 
+
+	c = 'maça', 'uva', 'banana', 'pera'
+
 e der um print(c[1]), ele irá printar a "uva", mas se eu der um print(c[-1]) ele irá printar a pera 
 
 dá pra utilizar o metodo "len()" tambem ex:
-len(c) = 4 (a tupla "c" tem 4 elementos)
+	
+ 	len(c) = 4 (a tupla "c" tem 4 elementos)
 
 as estrutura de repetição tambem podem ser utilizadas ex:
 
-c = maça, banana, uva, pera
-for b in c:                     o b receberá o c várias vezes até o c for igual a pera                                                    
- print(b)                       após isso o codigo irá continuar fora dessa estrutura
+	c = maça, banana, uva, pera
+	for b in c:                     o b receberá o c várias vezes até o c for igual a pera                                                    
+	 print(b)                       após isso o codigo irá continuar fora dessa estrutura
 
 nesse codigo abaixo o for irá printar todas as comidas até chechar na pera, quando chegar ne pera ele irá sair do codigo e irá dar o ultimo print
 
-c = ('maça', 'uva', 'banana', 'pera')
-for b in c:
-    print(f'Eu vou comer {b}')
-print('comi muito')
+	c = ('maça', 'uva', 'banana', 'pera')
+	for b in c:
+	    print(f'Eu vou comer {b}')
+	print('comi muito')
 
 usando o len() ele irá contar a quantidade de elementos na estrutura ex:
 
-c = ('maça', 'uva', 'banana', 'pera')
-for b in range (0, len(c)):
-    print(f'vou comer {c[b]}')
+	c = ('maça', 'uva', 'banana', 'pera')
+	for b in range (0, len(c)):
+	    print(f'vou comer {c[b]}')
 
 porém se utilizarmos o 'enumerate()' ele irá printar o que é que está na tupla e a sua posição ex:
-c = ('maça', 'uva', 'banana', 'pera')
-for pos, comida in enumerate(c):
- print(f'vou comer {comida} na posição {pos}')
+
+	c = ('maça', 'uva', 'banana', 'pera')
+	for pos, comida in enumerate(c):
+	  print(f'vou comer {comida} na posição {pos}')
 
 nesse codigo acima ele irá printar o que é que sera comido e a sua posição
 
 utilizando o metodo "sorted()" ele ira organizar o codigo ex:
-c = ('maça', 'uva', 'banana', 'pera')
-print(sorted(c))
 
-ele irá printar ['banana', 'maça', 'pera', 'uva']
+	c = ('maça', 'uva', 'banana', 'pera')
+	print(sorted(c))
+
+ ⇧ Ele irá printar ['banana', 'maça', 'pera', 'uva']
 
 Para somar duas tuplas é facil apenas iremos precisar de uma váriavel que some as duas ex:
-c = (1, 2, 3, 4)
-b = (5, 6, 7, 8)
-a = c + b
-print(a.count(1))
-print(a.index(1))
+
+ 	c = (1, 2, 3, 4)
+	b = (5, 6, 7, 8)
+	a = c + b
+	print(a.count(1))
+	print(a.index(1))
 
 o ".count()" irá contar a quantidade de vezes que o numero 1 aparece
 
@@ -655,9 +688,9 @@ D) Em que posição na tabela está p time da chapecoense.
 - exe074 = Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla, Depois disso, mostre a listagem de números gerados e também indique o menor e o maior valor que estão na tupla.
 
 - exe075 = Desenvolva um programa que leia quatro valores pelo teclado e guarde-os em uma tupla. No final mostre:
-A) Quantas vezes apareceu o valor 9.
-B) Em que posição foi digitado o primeiro valor 3.  
-C) Quais foram os números pares.
+  - A) Quantas vezes apareceu o valor 9.
+  - B) Em que posição foi digitado o primeiro valor 3.  
+  - C) Quais foram os números pares.
 
 - exe076 = Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos preços na sequência.
 No final, mostre uma listagem de preços, organizando os dados em forma tabular.
@@ -670,9 +703,9 @@ Aula 17 Variáveis Compostas (Listas) Pt.1
 
 Nessa aula o professor falou sobre a semelhança entre tuplas e listas, porém elas não são 100% iguais, diferente das tuplas, Listas são mutavéis ex:
 
-lanche = ['maça', 'uva', 'pera', 'banana']
-lanche[3] = 'manga' 
-print(lanche)  
+	lanche = ['maça', 'uva', 'pera', 'banana']
+	lanche[3] = 'manga' 
+	print(lanche)  
 
 nesse exemplo o codigo irá printar 'maça', 'uva', 'pera', 'manga' 
 
@@ -681,18 +714,18 @@ Listas[]
 
 e como visto acima as listas são declaradas com [], e para atribuir algo a lista usa o comando .append() ex:
 
-lanche = ['maça', 'uva', 'pera', 'banana']
-lanche.append('manga')
-print(lanche)
+	lanche = ['maça', 'uva', 'pera', 'banana']
+	lanche.append('manga')
+	print(lanche)
 
 nesse comando ele irá printar 'maça', 'uva', 'pera', 'banana', 'manga'
 
 E para inserir um elemento antes de outro elemento é so utilizar o metodo .insert(numero do elemento onde deseja inserir,'') ex:
 
-lanche = ['maça', 'uva', 'pera', 'banana']
-lanche.append('manga')
-lanche.insert(0, 'laranja')
-print(lanche)
+	lanche = ['maça', 'uva', 'pera', 'banana']
+	lanche.append('manga')
+	lanche.insert(0, 'laranja')
+	print(lanche)
 
 nesse comando ele irá printar 'laranja', 'maça', 'uva', 'pera', 'banana' ,'manga', O elemento que era 0 virou 1 o que era 1 virou 2 o que era 2 virou 3 e assim vai
 
@@ -703,30 +736,32 @@ ele criará uma lista com os valores indo de 4 até 10
 
 se vc criar uma lista uma lista com os valores 8, 2, 5, 4, 9, 3, 0 e der um .sort ele irá orgaziar os valores de forma crescente
 ex: 
-valores = [8, 2, 5, 4, 9, 3, 0]
-valores.sort()
-print(valores)
+
+ 	valores = [8, 2, 5, 4, 9, 3, 0]
+	valores.sort()
+	print(valores)
 
 ele irá imprimir '0, 2, 3, 4, 5, 8, 9'
 
 para colocar os valores de maneira decrescente é só colocar o metodo .sort() novamente e dento das () é só colocar o metodo
 'reverse=True', lembrando que o "True" tem que começar com T maiúsculo ex:
 
-valores = [8, 2, 5, 4, 9, 3, 0]
-valores.sort()
-valores.sort(reverse=True)
-print(valores)
+	valores = [8, 2, 5, 4, 9, 3, 0]
+	valores.sort()
+	valores.sort(reverse=True)
+	print(valores)
 
 valores vão ser 9, 8, 5, 4, 3, 2, 0
 
 e usando o 'len()' ele irá contar quantos elementos tem no codigo, no exemplo acima ele terá 7 elementos
 
 se vc igualar uma lista na outra ele criará uma ligação entre as mesmas ex:
-a = [2, 3, 4, 7]
-b = a
-b[2] = 8
-print(f'Lista A: {a}')
-print(f'Lista B: {b}')
+
+	a = [2, 3, 4, 7]
+	b = a
+	b[2] = 8
+	print(f'Lista A: {a}')
+	print(f'Lista B: {b}')
 
 ele irá printar
 Lista A: [2, 3, 8, 7]
@@ -759,68 +794,73 @@ AULA 18 Variáveis compostas (Listas) Pt.2
 
 No começo da aula o professor revisou os assuntos passados na última aula e Nessa aula o professor irá ensinar como criar uma lista dentro da outra
 Ex: 
-                  0              1             2
-pessoas = [['Pedro', 25], ['Maria', 19], ['João', 32]]
-               0      1       0      1       0     1
+
+			0              1             2
+	pessoas = [['Pedro', 25], ['Maria', 19], ['João', 32]]
+	               0      1       0      1       0     1
 
 Isso é, dentro da lista "pessoas" eu tenho 3 listas
 
 E se eu der um "print(pessoas[0][0])"
 	ele irá printar 'Pedro' 
 
-Outros exemplos: 
-print(pessoas[1][1])
-	ele irá printar '19'
+Outro exemplo utilizando as Variáveis compostas acima ⇧: 
 
-print(pesssoas[2][0]) 
-	ele irá printar 'João'
+	print(pessoas[1][1])
+ele irá printar '19'
+	
+	print(pesssoas[2][0]) 
+ele irá printar 'João'
+	
+	print(pessoas[1])
+ele irá printar tudo 'Maria', 19
 
-print(pessoas[1])
-	ele irá printar tudo 'Maria', 19
+Outro exemplo::
 
-galera = [['João', 14], ['Pedro', 15], ['Felipe', 15], ['Gabriel', 14]]
-for c in galera:
-    print(f'{c[0]} tem {c[1]} anos')
+	galera = [['João', 14], ['Pedro', 15], ['Felipe', 15], ['Gabriel', 14]]
+	for c in galera:
+	    print(f'{c[0]} tem {c[1]} anos')
 
 ele irá printar:
-	João tem 14 anos
-	Pedro tem 15 anos
-	Felipe tem 15 anos
-	Gabriel tem 14 anos
+-	João tem 14 anos
+-	Pedro tem 15 anos
+-	Felipe tem 15 anos
+-	Gabriel tem 14 anos
 
-Caso queira uma copia da lista não esquecer do [:]
-ex: 
+Caso queira uma copia da lista não esquecer do [:] ex: 
 
-g = []
-d = []
-for c in range(0, 3):
-    d.append(str(input('Nome: '))) 
-    d.append(int(input('Idade: ')))   
-    g.append(d[:])
-    d.clear()
-print(g)
+	g = []
+	d = []
+	for c in range(0, 3):
+	    d.append(str(input('Nome: '))) 
+	    d.append(int(input('Idade: ')))   
+	    g.append(d[:])
+	    d.clear()
+	print(g)
 
 No código acima ele copia o de antes apaga-ló
 Codigo completo
 
-g = []
-d = []
-totmen = totmai = 0
-for c in range(0, 3):
-    d.append(str(input('Nome: '))) 
-    d.append(int(input('Idade: ')))   
-Abaixo ele irá copiar o codigo antes de apagar
-#    g.append(d[:])
-#    d.clear()
-# Ele irá verificar se o individuo é maior de idade
-for p in g:
-    if p[1] >= 18:
-        print(f'{p[0]} é maior de idade.')
-        totmai += 1
-    else: 
-        print(f'{p[0]} é menor de idade.')
-        totmen =+ 1
-print(f'Temos {totmai} maiores e {totmen} menores.')
+	g = []
+	d = []
+	totmen = totmai = 0
+	for c in range(0, 3):
+	    d.append(str(input('Nome: '))) 
+	    d.append(int(input('Idade: ')))   
+	
+ 	# Abaixo ele irá copiar o codigo antes de apagar
+	    g.append(d[:])
+	    d.clear()
+	
+ 	# Ele irá verificar se o individuo é maior de idade
+	for p in g:
+	    if p[1] >= 18:
+	        print(f'{p[0]} é maior de idade.')
+	        totmai += 1
+	    else: 
+	        print(f'{p[0]} é menor de idade.')
+	        totmen =+ 1
+	print(f'Temos {totmai} maiores e {totmen} menores.')
  
 Exercicios
 
@@ -854,19 +894,19 @@ Nessa aula o professor ensinou como declarar dicionários usando o seguinte exem
 
 se eu der um: dados = dict() ou dados = {}, o programa ficará assim:
 
-dados = {}
-dados = {'nome':'Pedro', 'idade':25}
+	dados = {}
+	dados = {'nome':'Pedro', 'idade':25}
 
 o indicie 0 dos dados passará a valer 'nome' e o indicie 1 passará a valer 'idade', usando o mesmo programa acima e dando um print() ele ficará assim: 
 
                          dados
 		    'Pedro'   25     	
-	              nome    idade  
+	             nome    idade  
 
-dados = {}
-dados = {'nome':'Pedro', 'idade':25}
-print(dados['nome']) 
-print(dados['idade'])
+	dados = {}
+	dados = {'nome':'Pedro', 'idade':25}
+	print(dados['nome']) 
+	print(dados['idade'])
 
 ele irá printar 'Pedro' e 25
 
@@ -878,8 +918,8 @@ diferente das listas ou das tuplas os dicionários não precisam do ".append()" 
 
 e se eu quiser eliminar um elemento basta apenas utilizar o comando 'del', ex
 
-dados['sexo'] = 'M' 
-del dados['idade']
+	dados['sexo'] = 'M' 
+	del dados['idade']
 
                            dados
 		     'Pedro'    M	
@@ -887,10 +927,10 @@ del dados['idade']
 
 Agora vamos criar um elemento:
 
-filme = {'titulo': 'Star Wars',
-         'ano': 1977,
-	 'diretor': 'George Lucas'
- 	 }	 	
+	filme = {'titulo': 'Star Wars',
+	         'ano': 1977,
+		 'diretor': 'George Lucas'
+	 	 }	 	
 
 e o python entenderá assim:
  
@@ -898,12 +938,12 @@ e o python entenderá assim:
 	'Star wars'  1977   'George Lucas'
           titulo     ano        diretor
  
-se eu der um print(filme.values()), ele irá retornar a parte de cima (os valores), mas se eu quiser pegar a parte de baixos(as chaves) é só eu dar um print(filme.keys()), mas se eu quiser pegar todos os valores é só dar um 
-print(filme.items())
+se eu der um print(filme.values()), ele irá retornar a parte de cima (os valores), mas se eu quiser pegar a parte de baixos(as chaves) é só eu dar um print(filme.keys()), mas se eu quiser pegar todos os valores é só dar um print(filme.items())
 
 Agora vamos utilizar o for com os dicionários da seguinte maneira:
-for k, v in filme.items():
-	print(f'O {k} é {v)')
+
+	for k, v in filme.items():
+		print(f'O {k} é {v)')
 
 ele irá printar:
 O titulo é Star Wars
@@ -917,7 +957,7 @@ Dá pra se utilizar também dicionários com listas ex:
  LOCADORA
 'Star wars'  1977   'George Lucas'   / 	 'Avengers'  2012    'Joss Whedon'   /  'Matrix'   1999     'Wachowski'
   titulo     ano        diretor     /      titulo     ano      diretor      /    titulo     ano       diretor         
- 	  
+	 	  
 se eu der um:
 print(locadora[0]['ano'])     ele irá printar 1977
 print(locadora[2]['titulo'])  ele irá printar 'Matrix'
@@ -926,68 +966,77 @@ print(locadora[2]['titulo'])  ele irá printar 'Matrix'
 Codigos importantes:
 
 Para dar um print em um dicionário:
-dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
-print(f'O {dados["nome"]} tem {dados["idade"]} anos')
+	
+ 	dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
+	print(f'O {dados["nome"]} tem {dados["idade"]} anos')
 
 
 Para ver todos os itens do dicionário:
-dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
-print(dados.items())
-print(dados.keys())
-print(dados.values())
+
+	dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
+	print(dados.items())
+	print(dados.keys())
+	print(dados.values())
 
 Para printar todos os valores e apagar um elemento:
-dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
-del dados['idade']
-for k, v in dados.items():
-    print(f'{k} = {v}')
+
+ 	dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
+	del dados['idade']
+	for k, v in dados.items():
+	    print(f'{k} = {v}')
  
 Para modificar:
-dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
-dados['nome'] = 'junior'
-for k, v in dados.items():
-    print(f'{k} = {v}')
+
+	dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
+	dados['nome'] = 'junior'
+	for k, v in dados.items():
+	    print(f'{k} = {v}')
 
 Para adicionar elementos:
-dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
-dados['peso'] = 98.5
-for k, v in dados.items():
-    print(f'{k} = {v}')
+
+	dados = {'nome': 'Caue', 'idade': '19', 'sexo':'M' }
+	dados['peso'] = 98.5
+	for k, v in dados.items():
+	    print(f'{k} = {v}')
+
 O 'peso' não existe por isso ele adicionou
 
 Para criar Lista com dicionários:
-br = []
-e1 = {'uf': 'Bahia', 'Sigla': 'BA'}
-e2 = {'uf': 'São Paulo', 'Sigla': 'SP'}
-br.append(e1)
-br.append(e2)
-print(br)
+
+ 	br = []
+	e1 = {'uf': 'Bahia', 'Sigla': 'BA'}
+	e2 = {'uf': 'São Paulo', 'Sigla': 'SP'}
+	br.append(e1)
+	br.append(e2)
+	print(br)
+
 e caso queira printar algo especifico nesse mesmo codigo
-br = []
-e1 = {'uf': 'Bahia', 'Sigla': 'BA'}
-e2 = {'uf': 'São Paulo', 'Sigla': 'SP'}
-br.append(e1)
-br.append(e2)
-print(br[1]["uf"])
+
+ 	br = []
+	e1 = {'uf': 'Bahia', 'Sigla': 'BA'}
+	e2 = {'uf': 'São Paulo', 'Sigla': 'SP'}
+	br.append(e1)
+	br.append(e2)
+	print(br[1]["uf"])
 -----------------------------------------------------------
 
 Exercicios
 
-exe090 = Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário. No final, mostre o conteúdo da estrutura na tela. 
+- exe090 = Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário. No final, mostre o conteúdo da estrutura na tela. 
  
-exe091 = Crie um programa onde 4 jogadores jogem um dado e tenham resultados aleatórios. Guarde esses resultados em um dicionário. No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado
+- exe091 = Crie um programa onde 4 jogadores jogem um dado e tenham resultados aleatórios. Guarde esses resultados em um dicionário. No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado
 
-exe092 = Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre os (com idade) em um dicionário se por acaso a ctps for diferente de ZERO. o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar.
+- exe092 = Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre os (com idade) em um dicionário se por acaso a ctps for diferente de ZERO. o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar.
 
-exe093 = Crie um programa que gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de gols feitos em cada partida. No final, tudo isso será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.
+- exe093 = Crie um programa que gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de gols feitos em cada partida. No final, tudo isso será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.
 
-exe094 = Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final, mostre:
-A) Quantas pessoas foram cadastradas 
-B) A média de idade do grupo.
-C) Uma lista com todas as mulheres.
-D) Uma lista com todas as pessoas com idade acima da média
+- exe094 = Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final, mostre:
+  - A Quantas pessoas foram cadastradas 
+  - B A média de idade do grupo.
+  - C Uma lista com todas as mulheres.
+  - D Uma lista com todas as pessoas com idade acima da média
 
-exe095 = Aprimore o DESAFIO 093 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
+ - exe095 = Aprimore o DESAFIO 093 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 
 ===========================================================================
 
@@ -996,150 +1045,154 @@ AULA 20 Funções/def (pt.1)
 Funções são rotinas, exemplo de algumas funções que já usamos e que já vem no python:
 print(), len(), input(), int(), float() 
 "def" são Funções você mesmo cria, ex:
-print('-' * 10)
-print('    SISTEMAS DE ALUNOS    ')
-print('-' * 10)
-print('-' * 10)
-print('    CADASTRO DE FUNCIONÁRIOS  ')
-print('-' * 10)
-print('-' * 10)
-print('    ERRO DO SISTEMA      ')
-print('-' * 10)
+
+	print('-' * 10)
+	print('    SISTEMAS DE ALUNOS    ')
+	print('-' * 10)
+	print('-' * 10)
+	print('    CADASTRO DE FUNCIONÁRIOS  ')
+	print('-' * 10)
+	print('-' * 10)
+	print('    ERRO DO SISTEMA      ')
+	print('-' * 10)
 
 se eu criar:
-def mostralinha():
-	print('-' * 10)
+
+	def mostralinha():
+	   print('-' * 10)
 
 e mandar printar assim:
 
-mostralinha()
-print('    SISTEMAS DE ALUNOS    ')
-mostralinha()
-mostralinha()
-print('    CADASTRO DE FUNCIONÁRIOS  ')
-mostralinha()
-mostralinha()
-print('    ERRO DO SISTEMA      ')
-mostralinha()
+	mostralinha()
+	print('    SISTEMAS DE ALUNOS    ')
+	mostralinha()
+	mostralinha()
+	print('    CADASTRO DE FUNCIONÁRIOS  ')
+	mostralinha()
+	mostralinha()
+	print('    ERRO DO SISTEMA      ')
+	mostralinha()
 
-o print será o mesmo
+O print será o mesmo
 
-Se eu usar as defs da seguinte maneira 
-def mensagem(msg):
-   print('-' * 15)
-   print(msg)
-   print('-' * 15)	
-mensagem('SISTEMAS DE ALUNOS')
+Se eu usar as defs da seguinte maneira: 
+
+ 	def mensagem(msg):
+	   print('-' * 15)
+	   print(msg)
+	   print('-' * 15)	
+	mensagem('SISTEMAS DE ALUNOS')
 
 quando o código rodar ele irá passar a mensagem 'SISTEMA DE ALUNOS' para o parâmetro msg
 
 Caso queira somar dois números:
-
-def soma(a, b):
-    c = a + b
-    print(c)
-    
-# PROGRAMA PRINCIPAL
-n1 = int(input('N1: '))
-n2 = int(input('N2: '))
-soma(n1, n2)
+	
+	def soma(a, b):
+	    c = a + b
+	    print(c)
+	    
+	# PROGRAMA PRINCIPAL
+	n1 = int(input('N1: '))
+	n2 = int(input('N2: '))
+	soma(n1, n2)
 
 Caso queira especificar qual será os números ou elementos da função faça assim
 
-def soma(a, b):
-    c = a + b
-    print(c)
-    
-# PROGRAMA PRINCIPAL
-soma(a=3, b=2) ou vice versa
+	def soma(a, b):
+	    c = a + b
+	    print(c)
+	    
+	# PROGRAMA PRINCIPAL
+	soma(a=3, b=2) ou vice versa
 
 mais exemplos:
-ef soma(a, b):
-    print(f'A = {a} e B = {b}')
-    c = a + b
-    print(f'A soma A + B = {c}')
-    
-# PROGRAMA PRINCIPAL
-n1 = int(input('N1: '))
-n2 = int(input('N2: '))
-soma(a=n1, b=n2)
-soma(1, 3)
+
+	def soma(a, b):
+	    print(f'A = {a} e B = {b}')
+	    c = a + b
+	    print(f'A soma A + B = {c}')
+		    
+	# PROGRAMA PRINCIPAL
+	n1 = int(input('N1: '))
+	n2 = int(input('N2: '))
+	soma(a=n1, b=n2)
+	soma(1, 3)
 
 Caso queira que o def receba mais parâmetros do que o declarado basta colocar o def assim:
 
-"def soma(*num):"
+	"def soma(*num):"
 
 Dessa maneira eu vou poder passar quantos parametros eu quiser, ex:
 
-def soma(*num):
-
-soma(2, 1, 7)
-soma(8, 0) 
-soma(4, 4, 7, 6, 0)
+	def soma(*num):
+	
+	soma(2, 1, 7)
+	soma(8, 0) 
+	soma(4, 4, 7, 6, 0)
 
 ----------------------------------------------------------------
 Códigos importantes:
  Def Para analisar a quantidade de valores recebidos:
-def soma(* núm):
-   s = len(núm)
-   print(f'Recebi os valores {núm} e são ao todo {s} números')
+	
+ 	def soma(* núm):
+	   s = len(núm)
+	   print(f'Recebi os valores {núm} e são ao todo {s} números')
 
-# Programa Principal
-soma(2, 1, 7)
-soma(8, 0) 
-soma(4, 4, 7, 6, 2)
+	# Programa Principal
+	soma(2, 1, 7)
+	soma(8, 0) 
+	soma(4, 4, 7, 6, 2)
 
 -------
 def que dobra valores:
-def dob(lst):
-    s = 0
-    while s < len(lst):
-        lst[s] *= 2
-        s += 1
-
-# Programa Principal
-v = [3, 6, 5]
-dob(v) # O dobra vai receber os parâmetros do v
-print(v)
+	
+ 	def dob(lst):
+	    s = 0
+	    while s < len(lst):
+	        lst[s] *= 2
+	        s += 1
+	
+	# Programa Principal
+	v = [3, 6, 5]
+	dob(v) # O dobra vai receber os parâmetros do v
+	print(v)
 
 --------
 def de Leitor e somador de números:
-def dob(* values):
-    s = 0
-    for n in values:
-        s += n
-    print(f'Somando os valores {values} temos {s}')
 
-# Programa Principal
-dob(int(input('Digite um valor: ')), 
-    int(input('Digite um valor: ')), 
-    int(input('Digite um valor: ')))
+	def dob(* values):
+	    s = 0
+	    for n in values:
+	        s += n
+	    print(f'Somando os valores {values} temos {s}')
+	
+	# Programa Principal
+	dob(int(input('Digite um valor: ')), 
+	    int(input('Digite um valor: ')), 
+	    int(input('Digite um valor: ')))
 
 EXERCICIOS
 
-exe096 = Faça um programa que tenha uma função chamada área(), que receba as dimensões de um terreno retangular (largura e comprimento) e mostre a área do terreno.
+- exe096 = Faça um programa que tenha uma função chamada área(), que receba as dimensões de um terreno retangular (largura e comprimento) e mostre a área do terreno.
 
-exe097 = Faça um programa que tenha a função chamada escreva(), que receba um texto qualquer como parâmetro e mostre uma mensagem com tamanho adaptável. 
+- exe097 = Faça um programa que tenha a função chamada escreva(), que receba um texto qualquer como parâmetro e mostre uma mensagem com tamanho adaptável. 
 
-Ex:
-escreva('Olá, mundo!') 
+  -Ex:
+  -  escreva('Olá, mundo!') 
+  - Saida: ~~~~~~~~~~~~
+            Olá, Mundo
+           ~~~~~~~~~~~~
 
-Saida:    ~~~~~~~~~~~~
-           Olá, Mundo
-          ~~~~~~~~~~~~
+- exe098 = Faça um programa que tenha uma função chamada contador(), que receba três parâmetros: inicio, fim e passo e realize a seguinte contagem.
+-  Seu programa tem que realizar três contagens através da função criada:
+-   a)De 1 até 10, de 1 em 1 
+-   b)De 10 até 0, de 2 em 2
+-   c)Uma contagem personalizada.
 
-exe098 = Faça um programa que tenha uma função chamada contador(), que receba três parâmetros: inicio, fim e passo e realize a seguinte contagem.
-
-Seu programa tem que realizar três contagens através da função criada:
-
-a)De 1 até 10, de 1 em 1 
-b)De 10 até 0, de 2 em 2
-c)Uma contagem personalizada.
-
-exe099 = Faça um programa que tenha uma função que chamada maior(), que receba vários parâmetros com valores inteiros.
+- exe099 = Faça um programa que tenha uma função que chamada maior(), que receba vários parâmetros com valores inteiros.
 Seu programa tem que analisar todos os valores e dizer qual deles é o maior. 
 
-exe100 = Faça um programa que tenha uma lista chamada números e duas funções chamadas sorteia() e somaPar(). A primeira função vai sortear 5 números e vai colocá-los dentro da lista e a segunda função vai mostrar a soma entre todos os valores PARES sorteados pela função anterior. 
+- exe100 = Faça um programa que tenha uma lista chamada números e duas funções chamadas sorteia() e somaPar(). A primeira função vai sortear 5 números e vai colocá-los dentro da lista e a segunda função vai mostrar a soma entre todos os valores PARES sorteados pela função anterior. 
 
 ===========================================================================
 
@@ -1150,9 +1203,9 @@ AULA 21 Funções/Def (pt.2)
 Interactive help:
 	Para obter ajuda no python basta usar a função "help()" e colocar qual função está com duvida no terminal. Outra maneira de fazer isso basta usar o 	"print('funçâo'.__doc__)"
 
-	Docstring:	
-		Para criar uma docstring para sua função basta 
-		utilizar três aspas antes do inicio do código, Ex:
+Docstring:	
+	Para criar uma docstring para sua função basta 
+	utilizar três aspas antes do inicio do código, Ex:
 
 			def c(i, f, p):
    			 '''
@@ -1179,9 +1232,9 @@ Definição de parâmetros opcionais:
 
 Você define parâmetros opcionais dentro dos parênteses da função, atribuindo um valor padrão a eles. Por exemplo:
 
-def saudacao(nome, saudacao_padrao="Olá"):
-    mensagem = saudacao_padrao + ", " + nome
-    return mensagem
+	def saudacao(nome, saudacao_padrao="Olá"):
+	    mensagem = saudacao_padrao + ", " + nome
+	    return mensagem
 
 No exemplo acima, o parâmetro saudacao_padrao é opcional e tem um valor padrão de "Olá".
 
@@ -1208,93 +1261,90 @@ O os 0 dentro da def s(a=0, b=0, c=0), servem para indicar se caso não estiver 
 Escopo de Variáveis:
 Escopos de variáveis funcionam da seguinte maneira:
 
-==========================================
-|                                        |  
-| ==================================     |
-| | def escopo(b):                 |     |
-| |	                           |     |
-| |	a = 4                      |-----|------> ESCOPO LOCAL
-| |	b += 3                     |     |         a = [4]
-| |	c = 5                      |     |         b = [3]
-| |	print(f'A dentro vale {a}')|     |         c = [5]   
-| |	print(f'B dentro vale {b}')|     |
-| |	print(f'C dentro vale {c}')|     |
-| ==================================     |
-|                                        |
-| a = 5                                  |
-| b = 1                                  |
-| c = 4                                  |
-| escopo(a)                              |
-| print(f'A fora vale {a]')--------------|-------> ESCOPO GLOBAL
-| print(f'B fora vale {b}')              |	       a = [5]	 
-| print(f'C fora vale {c}')              |             b = [1]
-==========================================             c = [4]
+	==========================================
+	|                                        |  
+	| ==================================     |
+	| | def escopo(b):                 |     |
+	| |	                           |     |
+	| |	a = 4                      |-----|------> ESCOPO LOCAL
+	| |	b += 3                     |     |         a = [4]
+	| |	c = 5                      |     |         b = [3]
+	| |	print(f'A dentro vale {a}')|     |         c = [5]   
+	| |	print(f'B dentro vale {b}')|     |
+	| |	print(f'C dentro vale {c}')|     |
+	| ==================================     |
+	|                                        |
+	| a = 5                                  |
+	| b = 1                                  |
+	| c = 4                                  |
+	| escopo(a)                              |
+	| print(f'A fora vale {a]')--------------|-------> ESCOPO GLOBAL
+	| print(f'B fora vale {b}')              |	       a = [5]	 
+	| print(f'C fora vale {c}')              |             b = [1]
+	==========================================             c = [4]
 
-Para tratar o A ou qualquer outra letra como global basta utilizar o "global a"
+Para tratar o A ou qualquer outra variável como global basta utilizar o "global a"
 
-==========================================
-|                                        |  
-| ==================================     |
-| | def escopo(b):                 |     |
-| |---> global a                   |     |
-| |	a = 4                      |-----|------> ESCOPO LOCAL
-| |	b += 3                     |     |         a = [4]<---------
-| |	c = 5                      |     |         b = [3]         |
-| |	print(f'A dentro vale {a}')|     |         c = [5]         |
-| |	print(f'B dentro vale {b}')|     |                         |
-| |	print(f'C dentro vale {c}')|     |                         |
-| ==================================     | Os "a" são iguais agora=|
-|                                        |                         |
-| a = 5                                  |                         |
-| b = 1                                  |                         |
-| c = 4                                  |                         | 
-| escopo(a)                              |                         |
-| print(f'A fora vale {a]')--------------|-------> ESCOPO GLOBAL   |
-| print(f'B fora vale {b}')              |	       a = [4]<----- 
-| print(f'C fora vale {c}')              |             b = [1]
-==========================================             c = [4]
+	==========================================
+	|                                        |  
+	| ==================================     |
+	| | def escopo(b):                 |     |
+	| |---> global a                   |     |
+	| |	a = 4                      |-----|------> ESCOPO LOCAL
+	| |	b += 3                     |     |         a = [4]<---------
+	| |	c = 5                      |     |         b = [3]         |
+	| |	print(f'A dentro vale {a}')|     |         c = [5]         |
+	| |	print(f'B dentro vale {b}')|     |                         |
+	| |	print(f'C dentro vale {c}')|     |                         |
+	| ==================================     | Os "a" são iguais agora=|
+	|                                        |                         |
+	| a = 5                                  |                         |
+	| b = 1                                  |                         |
+	| c = 4                                  |                         | 
+	| escopo(a)                              |                         |
+	| print(f'A fora vale {a]')--------------|-------> ESCOPO GLOBAL   |
+	| print(f'B fora vale {b}')              |	       a = [4]<----- 
+	| print(f'C fora vale {c}')              |             b = [1]
+	==========================================             c = [4]
 
 
 Retorno de valores (return)
 
 O "return" em Python é uma instrução usada em funções para especificar o valor que a função deve produzir como resultado quando é chamada. Aqui está uma explicação simples:                     ChatGPT
 
-def soma(n=1):
-    f = 1 
-    for c in range(n, 0, -1):
-        f *= c
-    return f
+	def soma(n=1):
+	    f = 1 
+	    for c in range(n, 0, -1):
+	        f *= c
+	    return f
 
-
-a = int(input('Digite um numero para ver seu fatorial: '))
-print(f'O fatorial de {a} é igual a {soma(a)}')
+	a = int(input('Digite um numero para ver seu fatorial: '))
+	print(f'O fatorial de {a} é igual a {soma(a)}')
 
 Exercicios
 
-exe101 = Crie um programa que tenha uma função chamada voto que vai receber como parâmetro o ano de nascimento de uma pessoa. retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATÒRIO nas eleições.
+- exe101 = Crie um programa que tenha uma função chamada voto que vai receber como parâmetro o ano de nascimento de uma pessoa. retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATÒRIO nas eleições.
 
-exe102 = Crie um programa que tenha uma função fatorial() que receba dois parâmetros: o primeiro que indique o nùmero a calcular e o outro chamado show, que será um valor lógico (opcional) indicando, se será mostrado ou não na tela o processo de cálculo do fatorial. 
+- exe102 = Crie um programa que tenha uma função fatorial() que receba dois parâmetros: o primeiro que indique o nùmero a calcular e o outro chamado show, que será um valor lógico (opcional) indicando, se será mostrado ou não na tela o processo de cálculo do fatorial. 
 
-exe103 = Faça um programa que tenha uma função chamada ficha(), que os receba dois parâmetros opcionais: o nome dde um jogador e quantos gols ele marcou.
+- exe103 = Faça um programa que tenha uma função chamada ficha(), que os receba dois parâmetros opcionais: o nome dde um jogador e quantos gols ele marcou.
 O programa deverá ser capaz de mostrar a ficha do jogador, mesmo que algum dado não tenha sido formado corretamente
 
-exe104 = Crie um programa que tenha a função leiaint(), que vai funcionar de forma semelhante á função input() do python, só que fazendo validação para aceitar apenas um valor numérico.
+- exe104 = Crie um programa que tenha a função leiaint(), que vai funcionar de forma semelhante á função input() do python, só que fazendo validação para aceitar apenas um valor numérico.
 
-Ex:
-n = leiaint('Digite um n') 
+		Ex:
+		n = leiaint('Digite um n') 
 
-exe105 = Faça um programa que tenha uma função notas() que pode receber varias notas de alunos e vai retornar um dicionário com as seguintes informações:
+- exe105 = Faça um programa que tenha uma função notas() que pode receber varias notas de alunos e vai retornar um dicionário com as seguintes informações:
 
-- Quantidade de notas 
-- A maior nota 
-- A menor nota
-- A média da turma
-- A situação (Opcional)
-
+   - Quantidade de notas 
+   - A maior nota 
+   - A menor nota
+   - A média da turma
+   - A situação (Opcional)
 Adione também as docstrings da função.
 
-exe106 = Faça um mini-sistema que utilize o interactive help do Python. O usuário vai digitar o comando e o manual vai aparecer. Quando o usuário digitar a palavra 'FIM', o programa se encerrará
-Obs: use cores.
+- exe106 = Faça um mini-sistema que utilize o interactive help do Python. O usuário vai digitar o comando e o manual vai aparecer. Quando o usuário digitar a palavra 'FIM', o programa se encerrará Obs: use cores.
 
 ===========================================================================
 
@@ -1310,79 +1360,78 @@ Modularização
 
 Para explicar sobre a modularização o professor deu o seguinte exemplo:
 
-def fatorial(n):
-   f = 1
-   for c in range(1, n+1):
-      f *= c
-   return f
-
-num = int(input("Digite um valor: ")
-fat = fatorial(num)
-print(f'o fatorial de {num} é {fat}')
+	def fatorial(n):
+	   f = 1
+	   for c in range(1, n+1):
+	      f *= c
+	   return f
+	
+	num = int(input("Digite um valor: ")
+	fat = fatorial(num)
+	print(f'o fatorial de {num} é {fat}')
 
 E logo após isso ele aumentou o tamanho do programa para dar o exemplo de como deve ser feito a modularização deixando-o assim: 
-
-# Defs
-def fact(n):
-    f = 1
-    for c in range(1, n+1):
-        f *= c
-    return f
-
-def dob(n):
-    return n * 2
-
-def tri(n):
-    return n * 3
-
-# Programa Principal
-num = int(input('Digite um valor: '))
-ff = fact(num) 
-print(f'O fatorial de {num} é {ff}')
-print(f'O dobro é {dob(num)}')
-print(f'E o triplo é {tri(num)}')
+	
+	# Defs
+	def fact(n):
+	    f = 1
+	    for c in range(1, n+1):
+	        f *= c
+	    return f
+	
+	def dob(n):
+	    return n * 2
+	
+	def tri(n):
+	    return n * 3
+	
+	# Programa Principal
+	num = int(input('Digite um valor: '))
+	ff = fact(num) 
+	print(f'O fatorial de {num} é {ff}')
+	print(f'O dobro é {dob(num)}')
+	print(f'E o triplo é {tri(num)}')
 
 Após ter feito isso ele Passou as defs para um outro código e deixou apenas o programa principal no codigo e ficou assim 
 
-# Programa Principal
-num = int(input('Digite um valor: '))
-ff = fact(num) 
-print(f'O fatorial de {num} é {ff}')
-print(f'O dobro é {dob(num)}')
-print(f'E o triplo é {tri(num)}')
+	# Programa Principal
+	num = int(input('Digite um valor: '))
+	ff = fact(num) 
+	print(f'O fatorial de {num} é {ff}')
+	print(f'O dobro é {dob(num)}')
+	print(f'E o triplo é {tri(num)}')
 
 E após isso ele importou a função fact, dob, tri do outro código(Nosso caso u) e então ficou assim
 
-# Codigo principal da pagina app.py  
-  import u # <- Vai importar as defs da página u
-
-  num = int(input('Digite um valor: '))
-  ff = u.fact(num) 
-  print(f'O fatorial de {num} é {ff}')
-  print(f'O dobro é {u.dob(num)}')
-  print(f'E o triplo é {u.tri(num)}')
-
-# Codigo u importado para a o Codigo Principal 
-
-  def fact(n):
-    f = 1
-    for c in range(1, n+1):
-        f *= c
-    return f
-
-  def dob(n):
-     return n * 2
-
-  def tri(n):
-     return n * 3
+	# Codigo principal da pagina app.py  
+	  import u # <- Vai importar as defs da página u
+	
+	  num = int(input('Digite um valor: '))
+	  ff = u.fact(num) 
+	  print(f'O fatorial de {num} é {ff}')
+	  print(f'O dobro é {u.dob(num)}')
+	  print(f'E o triplo é {u.tri(num)}')
+	
+	# Codigo u importado para a o Codigo Principal 
+	 def fact(n):
+	    f = 1
+	    for c in range(1, n+1):
+	        f *= c
+	    return f
+	
+	  def dob(n):
+	     return n * 2
+	
+	  def tri(n):
+	     return n * 3
 
 ATENÇÃO!!!!!! NÃO ESQUECER DE SALVAR AS DEFS DA PÁGINA DE DEFS ANTES DE RODAR O PROGRAMA PRINCIPAL
 
 Modulos que já vem no Python:
 
-from math import sqrt
-from datetime import date
-from random import randint
+	from math import sqrt
+	from datetime import date
+	from random import randint
 
 Vantagens da modularização:
 - Organização do Código
@@ -1396,30 +1445,29 @@ Vantagens da modularização:
 Pacotes
 
 Pacotes em python serve para reunir vários modulos, e para criar um é muito simples basta criar na pasta do projeto o nome do pacote que está armazenado os modulos, ex:
-Pasta =   Uteis
-Modúlos =  ↳ Cores 
-           ↳ Datas
-           ↳ Números   
-           ↳ Strings  
 
+     Pasta =      Uteis
+     Modúlos =     ↳ Cores 
+	           ↳ Datas
+	           ↳ Números   
+	           ↳ Strings  
+	
 
 Exercicios
 
-exe107 = Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade() 
+- exe107 = Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade() 
+  - Faça também um programa que importe esse módulo e use algumas dessas funções
 
-Faça também um programa que importe esse módulo e use algumas dessas funções
+- exe108 = Adapte o código do desafio 107, criando uma função adicional chamada moeda() que consiga mostrar os valores como um valor monetário formatado
 
-exe108 = Adapte o código do desafio 107, criando uma função adicional chamada moeda() que consiga mostrar os valores como um valor monetário formatado
+- exe109 = Modifique as funções que foram criadas no desafio 107 para que eles aceitem um parâmetro a mais, informando se o valor retornado por elas vai ser ou não formatado pela função moeda(), desenvolvida no desafio 108
 
-exe109 = Modifique as funções que foram criadas no desafio 107 para que eles aceitem um parâmetro a mais, informando se o valor retornado por elas vai ser ou não formatado pela função moeda(), desenvolvida no desafio 108
+- exe110 = Adicione ao módulo moeda.py criado nos desafios anteriores, uma função chamada resummo(), que mostre ba tela algumas funções que já temos no módulo criado até aqui. 
 
-exe110 = Adicione ao módulo moeda.py criado nos desafios anteriores, uma função chamada resummo(), que mostre ba tela algumas funções que já temos no módulo criado até aqui. 
+- exe111 =  Crie um pacote chamado utilidadesCev que tenha dois módulos interno chamados moeda e dado.
+  - Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o primeiro pacote e mantenha tudo funcionando. 
 
-exe111 =  Crie um pacote chamado utilidadesCev que tenha dois módulos interno chamados moeda e dado.
-
-Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o primeiro pacote e mantenha tudo funcionando. 
-
-exe112 = Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários
+- exe112 = Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários
 
 ===========================================================================
 
