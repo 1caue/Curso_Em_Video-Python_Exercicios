@@ -1,6 +1,7 @@
-Curso em Video - Python Aulas e Desafios
+=
 Nesse readme, Eu fiz um breve resumo sobre de todas as aulas e exercicios passados no curso a partir da aula 6
-CEV PYTHON
+=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 AULA 6 CDP, TIPOS PRIMITIVOS:
 Python possui vários tipos primitivos (também conhecidos como tipos básicos) que são usados para armazenar valores simples. Alguns dos tipos primitivos mais comuns em Python incluem:
 
@@ -14,9 +15,12 @@ String (str): Representa sequências de caracteres. Pode ser delimitada por aspa
 
 Nenhum (NoneType): Representa a ausência de valor. É frequentemente usado para inicializar variáveis que serão atribuídas posteriormente
 
-Esses são os tipos primitivos mais comuns em Python. No entanto, Python é uma linguagem dinamicamente tipada, o que significa que você não precisa declarar explicitamente o tipo de uma variável. O interpretador Python deduz o tipo automaticamente com base no valor atribuído à variável.
+Esses são os tipos primitivos mais comuns em Python. No entanto, Python é uma linguagem dinamicamente tipada, o que significa que você não precisa declarar explicitamente o tipo de uma variável. O interpretador Python de duz o tipo automaticamente com base no valor atribuído à variável.
+
+Exercicios
 
 - exe03 CRIE UM PROGRAMA QUE LEIA DOIS NUMEROS E MOSTRE A SOMA ENTRE ELES
+
 - exe04 FAÇA UM PROGRAMA QUE LEIA ALGO PELO   TECLADO E E MOSTRE NA TELA O SEU TIPO PRIMITIVO E TODAS AS INFORMAÇÕES POSITIVAS SOBRE ELE
 
 ===========================================================================
@@ -91,7 +95,7 @@ EXERCICIOS
 
 ===========================================================================
  
-= AULA 9 CDP MANIPULANDO TEXTO
+AULA 9 CDP MANIPULANDO TEXTO
  FATIAMENTO
   - Frase (Curso em Video Python)
   - Contando os caracteres da frase acima temos 21 caracteres, pois o programa lê o caracter começando do 0
@@ -389,14 +393,16 @@ ou totalizando 6x ( de zero a 6)
 
 outra dica é: nunca esqueça em qualquer coisa que seja matemática, O ZERO TAMBÉM É NÚMERO, então sempre conte com ele.
 
-============================================
+-----------------------------------
+
 Mini Calculadora em python
 s = 0
 for c in range (0, 3):
     n = float(input('Digite um valor: '))
     s += n
 print(s, 'Fim')
-============================================
+
+-----------------------------------
 
 Exercicios:
 - exe 046 = Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artificio, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
@@ -803,9 +809,9 @@ totmen = totmai = 0
 for c in range(0, 3):
     d.append(str(input('Nome: '))) 
     d.append(int(input('Idade: ')))   
-# Abaixo ele irá copiar o codigo antes de apagar
-    g.append(d[:])
-    d.clear()
+Abaixo ele irá copiar o codigo antes de apagar
+#    g.append(d[:])
+#    d.clear()
 # Ele irá verificar se o individuo é maior de idade
 for p in g:
     if p[1] >= 18:
