@@ -1,8 +1,10 @@
 =
 Nesse readme, Eu fiz um breve resumo sobre de todas as aulas e exercicios passados no curso a partir da aula 6
 =
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-AULA 6 CDP, TIPOS PRIMITIVOS:
+---
+
+**AULA 6 CDP, TIPOS PRIMITIVOS:**
+
 Python possui vários tipos primitivos (também conhecidos como tipos básicos) que são usados para armazenar valores simples. Alguns dos tipos primitivos mais comuns em Python incluem:
 
 Inteiro (int): Representa números inteiros
@@ -17,15 +19,15 @@ Nenhum (NoneType): Representa a ausência de valor. É frequentemente usado para
 
 Esses são os tipos primitivos mais comuns em Python. No entanto, Python é uma linguagem dinamicamente tipada, o que significa que você não precisa declarar explicitamente o tipo de uma variável. O interpretador Python de duz o tipo automaticamente com base no valor atribuído à variável.
 
-Exercicios
+**Exercicios**
 
 - exe03 CRIE UM PROGRAMA QUE LEIA DOIS NUMEROS E MOSTRE A SOMA ENTRE ELES
 
 - exe04 FAÇA UM PROGRAMA QUE LEIA ALGO PELO   TECLADO E E MOSTRE NA TELA O SEU TIPO PRIMITIVO E TODAS AS INFORMAÇÕES POSITIVAS SOBRE ELE
 
-===========================================================================
+---
 
-AULA 7 CDP OPERADORES ARITIMÉTICOS: CONCLUIDO
+**AULA 7 CDP OPERADORES ARITIMÉTICOS:**
 - Operadores Aritméticos
    + Adição           ** Potência
    - Subtração        // Divisão Inteira
@@ -38,8 +40,8 @@ AULA 7 CDP OPERADORES ARITIMÉTICOS: CONCLUIDO
 O "end=' '" serve para não quebrar a linha 
 já o " \n " serve para quebrar a linha 
 
-EXERCICIOS
- 
+**EXERCICIOS**
+
  - exe005 Faça um programa que leia um numero inteiro e mostre seu sucessor e seu antecessor
 
  - exe006 Crie um algoritmo que leia um número e mostre o seu dobro triplo e raiz quadrada
@@ -57,9 +59,9 @@ Considere U$ = R$3,27
  
  - exe012 Faça um algoritmo que leia o preço de um produto e mostre seu novo preço com 5% de desconto 
 
-===========================================================================
+---
 
-AULA 8 CDP UTILIZANDO MODULOS : A CONCLUIR 22:00
+**AULA 8 CDP UTILIZANDO MODULOS:**
 Modulos são como tuplas você irá importá-las de alguma biblioteca
 
 Usando o "from math", você poderá utilizar todas essas funcionalidades 
@@ -77,7 +79,7 @@ Ex: import math
     from math import sqrt
     (Várialvel) = sqrt(Várialvel)
 
-EXERCICIOS
+**EXERCICIOS**
  
   exe016 = Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção inteira 
    Ex:Digite um numero: 6.127
@@ -93,10 +95,11 @@ EXERCICIOS
 
 - exe021 = Faça um progama que abra e reproduza o áudio de um arquivo MP3 
 
-===========================================================================
+---
  
-AULA 9 CDP MANIPULANDO TEXTO
- FATIAMENTO
+**AULA 9 CDP MANIPULANDO TEXTO**
+ 
+FATIAMENTO
   - Frase (Curso em Video Python)
   - Contando os caracteres da frase acima temos 21 caracteres, pois o programa lê o caracter começando do 0
   
@@ -124,7 +127,7 @@ AULA 9 CDP MANIPULANDO TEXTO
   
   - o "frase.split()" ele irá dividir as palavras da frase
    
-EXERCICIOS
+**EXERCICIOS**
  
 - exe022: Crie um programa que leia o nome completo de uma pessoa e mostre: O nome com todas as letras maiúsculas, o nome com todas as letras minusculas, quantas letras ao todo(sem considerar espaços), quantas letras tem o primeiro nome 
 
@@ -145,9 +148,9 @@ Ana Maria de Souza
 Primeiro = Ana
 Último = Souza 
 
-===========================================================================
+---
 
-AULA 10 CONDIÇÕES PT.1: 	
+**AULA 10 CONDIÇÕES PT.1:** 	
 Nessa aula o professor pegou de exemplo um caminho e montou dois trajetos
 
 	se carro.esquerda():         else:
@@ -188,7 +191,7 @@ Exemplo em Python:
 	   print('carro novo' if tempo <=3 else 'carro velho')
 	   print('--FIM--') 
 
-Exercicios
+**Exercicios**
  
 - exe028 = Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador.
   o programa deverá escrever na tela se o usuário venceu ou perdeu
@@ -209,9 +212,9 @@ Para os inferiores ou iguais a, o aumento é de 15%
 
 - exe035 = Desenvola um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo
 
-===========================================================================
+---
 
-AULA 11 CORES NO TERMINAL 
+**AULA 11 CORES NO TERMINAL:**
  Codigo ANSI, escape sequence
 Toda vez que quiser representar uma cor usará o codigo: 
 
@@ -260,13 +263,13 @@ print(f'OS VALORES SÃO \033[35m{a}\033[m e \033[32m{b}\033[m')
 
 Nunca esquecer do '[m'no final do codigo
 
-Exercicios:
+**Exercicio:**
 
 Colocar cores em pelo menos 15 dos 35 exercicos já feitos 15/15
 
-===========================================================================
+---
 
-AULA 12 CONDIÇOES ANINHADAS
+**AULA 12 CONDIÇOES ANINHADAS**
 
 Nessa aula o professor pegou o mesmo exemplo da aula 10, dos caminhos dos carros, porém ele adicionou mais um caminho 
 
@@ -292,12 +295,14 @@ Nessa aula o professor pegou o mesmo exemplo da aula 10, dos caminhos dos carros
 	carro.pare()
 
 Em Python:
-se = if |
-senão se = elif |
-senão = else.
-Você pode usar o elif quantas vezes quiser, porém não pode ter elif sem if, o else pode ser ou não usado.
+	
+ 	se = if |
+	senão se = elif |
+	senão = else.
+	Você pode usar o elif quantas vezes quiser, porém não pode ter elif sem if, o else pode ser ou não usado.
 
-Exercicios:
+**Exercicios:**
+
 - exe036 = Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal sabendo que ela não vai poder exceder 30% do salário ou então o empréstimo será negado.
 
 - exe037 = Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual a base de conversão:
@@ -351,9 +356,9 @@ APROVADO
 
 - exe045 = Crie um programa que faça o computador jogar jokenpô com você
 
-===========================================================================
+---
 
-AULA 13 ESTRUTURA FOR (LAÇOS DE REPETIÇÃO)
+**AULA 13 ESTRUTURA FOR (LAÇOS DE REPETIÇÃO)**
 
 Nessa aula o professor ensinou sobre o laço for dando exemplo de passo a passo
 usando o seguinte exemplo:
@@ -422,7 +427,8 @@ Mini Calculadora em python
 	print(f'{s:.0f}\nFim')
 -----------------------------------
 
-Exercicios:
+**Exercicios:**
+
 - exe046 = Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artificio, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
 
 - exe047 = Crie um programa que mostre na tela todos os números PARES que estão entre 1 e 50
@@ -448,9 +454,9 @@ Exercicios:
   - Qual o nome do homem mais velho.
   - Quantas mulheres têm menos de 20 anos. 
 
-===========================================================================
+---
 
-AULA 14 ESTRUTURA DE REPETIÇÃO WHILE
+**AULA 14 ESTRUTURA DE REPETIÇÃO WHILE:**
 
 Na aula 14 o professor mostrou o exemplo da ultima aula, porem dessa vez a quantidade de blocos para chegar na maça não era númerado, por isso o while tem que ser utilizado 
 Ex:
@@ -509,7 +515,7 @@ Analisador de números:
 	            impar += 1
 	print(f'Você digitou {par} numeros pares e {impar} numeros impares')
 
-Exercicios
+**Exercicios**
 
 - exe057 = Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a digitação novamente até ter um valor correto
 
@@ -536,9 +542,9 @@ Seu programa deverá realizar a operação solicitada em cada caso.
 
 - exe065 = Crie um programa que leia vários números inteiros pelo teclado. no final da execução, mostre a média entre todos os valores e qual foi o maior e mmenor valores lidos. O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores. 
 
-===========================================================================
+---
 
-AULA 15 INTERROMPENDO REPETIÇÕES WHILE
+**AULA 15 INTERROMPENDO REPETIÇÕES WHILE:**
 
 Nessa aula o professor usou o mesmo exemplo da aula passada, a do boneco, os blocos de grama e a maça, só que dessa vez foi inserido um troféu na plataforma e caso o boneco achasse esse troféu ele pararaia toda a sua tragetoria 
 Ex em algoritmo:
@@ -581,7 +587,7 @@ O comando break tem sempre que ficar após a pergunta para o usuário ex:
 	    s += c
 	print(f'A soma vale {s}')
 
-Exercicios
+**Exercicios**
 
 - exe066 = Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag) 
 
@@ -602,9 +608,9 @@ C) Qual é o nome do produto mais barato.
 - exe071 = Crie um programa que simule o funcionamento de um caixa eletrônico. No inicio, pergunte ao usuário qual será o valor a ser sacado (número inteiro) e o programa vai informar quantas cédulas de cada valor serão entregues.
 OBS: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.  
 
-===========================================================================
+---
 
-AULA 16 VÁRIAVEIS COMPOSTAS (TUPLAS)
+**AULA 16 VÁRIAVEIS COMPOSTAS (TUPLAS):**
 
 Tuplas são váriaveis que armazenam vários dados porem esses dados não podem ser modificados após a tupla ser criada ex:
 
@@ -675,7 +681,7 @@ já o print(a.index(1)) irá procurar em que posição está o numero 1
 
 Lembrando que as TUPLAS SÃO IMUTÁVEIS, se vc declarou c = ('maça', 'uva', 'banana', 'pera'), ele não poderá atribuir mais nada nas outras linhas de codigo
 
-Exercicios
+**Exercicios**
 
 - exe072 = Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até vinte. Seu programa deverá ler um número pelo teclado e mostrá-lo por extenso.
 
@@ -697,9 +703,9 @@ No final, mostre uma listagem de preços, organizando os dados em forma tabular.
 
 - exe077 = Crie um programa que tenha uma tupla com várias palavras (não usar acentos). Depois disso, você deve mostrar, para cada palavra, quais são as suas vogais
 
-===========================================================================
+---
 
-Aula 17 Variáveis Compostas (Listas) Pt.1
+**Aula 17 Variáveis Compostas (Listas) Pt.1:**
 
 Nessa aula o professor falou sobre a semelhança entre tuplas e listas, porém elas não são 100% iguais, diferente das tuplas, Listas são mutavéis ex:
 
@@ -769,7 +775,7 @@ Lista B: [2, 3, 8, 7]
 
 para quebrar essa ligação é só colocar o b = a[:] 
 
-Exercicios
+**Exercicios**
 
 - exe078 = Faça um programa que leia 5 valores numéricos e guarde-os em uma lista.
 No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições na lista
@@ -788,9 +794,9 @@ c)Se o valor 5 foi digitado e está ou não na lista.
 
 - exe083 = Crie um programa onde o usuário digite uma expressão qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta. 
 
-===========================================================================
+---
 
-AULA 18 Variáveis compostas (Listas) Pt.2
+**AULA 18 Variáveis compostas (Listas) Pt.2:**
 
 No começo da aula o professor revisou os assuntos passados na última aula e Nessa aula o professor irá ensinar como criar uma lista dentro da outra
 Ex: 
@@ -862,7 +868,7 @@ Codigo completo
 	        totmen =+ 1
 	print(f'Temos {totmai} maiores e {totmen} menores.')
  
-Exercicios
+**Exercicios**
 
 - exe084 = Faça um programa que leia o nome e peso de várias pessoas, guardando tudo em uma lista. No final, mostre:
 a)Quantas pessoas foram cadastradas.
@@ -882,9 +888,9 @@ c) O maior valor da segunda linha.
 
 - exe089 = Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em uma lista composta. No final, mostre um boletim contendo a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
 
-===========================================================================
+---
 
-AULA 19 VARIÁVEIS COMPOSTAS (DICIONÁRIOS)
+**AULA 19 VARIÁVEIS COMPOSTAS (DICIONÁRIOS)**
 
 Nessa aula o professor ensinou como declarar dicionários usando o seguinte exemplo 
 
@@ -1020,7 +1026,7 @@ e caso queira printar algo especifico nesse mesmo codigo
 	print(br[1]["uf"])
 -----------------------------------------------------------
 
-Exercicios
+**Exercicios**
 
 - exe090 = Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário. No final, mostre o conteúdo da estrutura na tela. 
  
@@ -1038,9 +1044,9 @@ Exercicios
 
  - exe095 = Aprimore o DESAFIO 093 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 
-===========================================================================
+---
 
-AULA 20 Funções/def (pt.1)
+**AULA 20 Funções/def (pt.1):**
 
 Funções são rotinas, exemplo de algumas funções que já usamos e que já vem no python:
 print(), len(), input(), int(), float() 
@@ -1171,7 +1177,7 @@ def de Leitor e somador de números:
 	    int(input('Digite um valor: ')), 
 	    int(input('Digite um valor: ')))
 
-EXERCICIOS
+**Exercicios**
 
 - exe096 = Faça um programa que tenha uma função chamada área(), que receba as dimensões de um terreno retangular (largura e comprimento) e mostre a área do terreno.
 
@@ -1194,9 +1200,9 @@ Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
 
 - exe100 = Faça um programa que tenha uma lista chamada números e duas funções chamadas sorteia() e somaPar(). A primeira função vai sortear 5 números e vai colocá-los dentro da lista e a segunda função vai mostrar a soma entre todos os valores PARES sorteados pela função anterior. 
 
-===========================================================================
+---
 
-AULA 21 Funções/Def (pt.2)
+**AULA 21 Funções/Def (pt.2):**
 
  Nessa aula o professor falou sobre Interactive help, Parâmetros opcionais, Escopo de Variáveis, Retorno de Valores (return)
 
@@ -1321,7 +1327,7 @@ O "return" em Python é uma instrução usada em funções para especificar o va
 	a = int(input('Digite um numero para ver seu fatorial: '))
 	print(f'O fatorial de {a} é igual a {soma(a)}')
 
-Exercicios
+**Exercicios**
 
 - exe101 = Crie um programa que tenha uma função chamada voto que vai receber como parâmetro o ano de nascimento de uma pessoa. retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATÒRIO nas eleições.
 
@@ -1346,9 +1352,9 @@ Adione também as docstrings da função.
 
 - exe106 = Faça um mini-sistema que utilize o interactive help do Python. O usuário vai digitar o comando e o manual vai aparecer. Quando o usuário digitar a palavra 'FIM', o programa se encerrará Obs: use cores.
 
-===========================================================================
+---
 
-AULA 22 MÓDULOS E PACOTES
+**AULA 22 MÓDULOS E PACOTES**
 
 Modularização 
 
@@ -1453,7 +1459,7 @@ Pacotes em python serve para reunir vários modulos, e para criar um é muito si
 	           ↳ Strings  
 	
 
-Exercicios
+**Exercicios**
 
 - exe107 = Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade() 
   - Faça também um programa que importe esse módulo e use algumas dessas funções
@@ -1469,9 +1475,9 @@ Exercicios
 
 - exe112 = Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários
 
-===========================================================================
+---
 
-AULA 23 TRATAMENTO DE ERROS
+**AULA 23 TRATAMENTO DE ERROS:**
 
 Nesta aula o professor nos ensinou sobre os erros que normalmente acontecem no nosso código em Python, e ele deu o seguinte exemplo:
 
@@ -1602,7 +1608,7 @@ Desta maneira podemos expandir nosso código de diversas maneiras explorando tod
 
 
 
-Exercicios 
+**Exercicios**
 
 - exe113  =  Reescreva a função leiaint() que fizemos no desafio 104, incluindo agora a possibilidade da digitação de um número de tipo inválido. Aproveite e crie também uma função chamada leiaFloat() com a mesma funcionalidade.
 
