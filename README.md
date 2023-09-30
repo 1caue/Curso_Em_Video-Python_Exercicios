@@ -215,7 +215,8 @@ Para os inferiores ou iguais a, o aumento é de 15%
 ---
 
 **AULA 11 CORES NO TERMINAL:**
- Codigo ANSI, escape sequence
+
+Codigo ANSI, escape sequence
 Toda vez que quiser representar uma cor usará o codigo: 
 
 	\033[m e entre o '[' e o 'm' vc colocará o codigo desejado
