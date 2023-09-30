@@ -1468,3 +1468,146 @@ Exercicios
   - Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o primeiro pacote e mantenha tudo funcionando. 
 
 - exe112 = Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validação de dados para aceitar apenas valores que sejam monetários
+
+===========================================================================
+
+AULA 23 TRATAMENTO DE ERROS
+
+Nesta aula o professor nos ensinou sobre os erros que normalmente acontecem no nosso código em Python, e ele deu o seguinte exemplo:
+
+		print(x)
+
+O código acima será uma exceção, mais conhecido como "NameError". Mais uma exceção a seguir:
+
+		n = int(input('Num'))
+
+Esse código irá rodar normalmente e dará um erro apenas se você digite algo que não seja um número inteiro, se o usuário digitar algo que não seja um número inteiro acontecerá um erro conhecido como "ValueError".
+
+Mais um exemplo a seguir: 
+
+		a = int(input('Numerador: '))
+		b = int(input('Denominador: '))
+		r = a / b
+		print(f'O resultado é {r}')
+
+O código rodará normalmente, porém se o usuário digitar 0, ele dará erro, por que não é possivel dividir 0, o nome desse erro em Python é "ZeroDivisionError"
+
+Mais um exemplo: 
+
+	r = 2 / '2'
+
+O '2' è um número?, Em outras linguagens de programação como php e javascript ele seria, mas no Python não, logo ele dará um erro de tipo o "TypeError"
+
+Exemplo de exceção utilizando listas:
+
+	lst = [3, 6, 4]
+	print(lst[3])
+
+Esse código será uma exceção, pois o terceiro número da lista não existe. 
+
+E se nós importarmos um módulo que não existe, o Erro que acontecerá será o "ModuleNotFoundError" ex:
+
+import uteis
+
+Caso uteis não exista esse código será uma exceção
+
+No caso do Python toda exceção é filho de uma classe maior, Conhecida como "Exeption", e daí começamos a falar sobre o "try:" e o "except:' ex:
+
+	try:
+	 OPERAÇÃO
+	
+	except:
+	 FALHOU
+
+Ex utilizando os comandos: 
+
+	try:    
+	  a = int(input('Numerador: '))   
+	  b = int(input('Denominador: '))
+	  r = a / b
+	  print(f'O resultado é {r}')
+	
+	except ZeroDivisionError():
+	  print('\033[31mNão é possivel dividir 0\033[m')
+
+E se o programa der certo podemos utilizar o "else:", para nos informar se deu certo ex: 
+
+	try:    
+	  a = int(input('Numerador: '))   
+	  b = int(input('Denominador: '))
+	  r = a / b
+	
+	except:
+	  print('\033[31mTivemos um problema\033[m')
+	
+	else:
+	  print(f'O resultado é {r}')
+
+E por fim o professor nós explicou para que serve o "finally", tambem pode ser usado no código acima e ele acontecerá independente se o código deu erro ou não, Ex:
+
+	try:    
+	  a = int(input('Numerador: '))   
+	  b = int(input('Denominador: '))
+	  r = a / b
+	
+	except:
+	  print('\033[31mTivemos um problema\033[m')
+	
+	else:
+	  print(f'O resultado é {r:.1f}')
+	
+	finally:
+	  print('Volte sempre!  Muito obrigado!!')
+
+Ex utilizando o finally e o Exeption:
+
+	try:    
+	  a = int(input('Numerador: '))   
+	  b = int(input('Denominador: '))
+	  r = a / b
+	
+	except Exception as erro:
+	  print(f'\033[31mTivemos um problema\033[m, O erro encontrado foi {erro.__class__}')
+	
+	else:
+	  print(f'O resultado é {r:.1f}')
+	
+	finally:
+	  print('Volte sempre! Muito obrigado!!')
+
+Desta maneira podemos expandir nosso código de diversas maneiras explorando todos os tipos de exceção, ex:
+
+	try:    
+	  a = int(input('Numerador: '))   
+	  b = int(input('Denominador: '))
+	  r = a / b
+
+	except (ValueError, TypeError):
+   	  print(f'\033[31mTivemos um problema com os tipos de dados que você digitou.\033[m')
+
+	except ZeroDivisionError:
+	  print('\033[31mNão é possivel dividir um número por 0!\033[m')
+
+	except KeyboardInterrupt:
+	  print('\033[31mO usuário preferiu não informar os dados!\033[m')
+
+	except Exception as erro:
+    	  print(f'O erro encontrado foi {erro.__cause__}')
+	
+	else:
+	  print(f'O resultado é {r:.1f}')
+
+	finally:
+	  print('Volte sempre! Muito obrigado!!')
+
+
+
+Exercicios 
+
+- exe113  =  Reescreva a função leiaint() que fizemos no desafio 104, incluindo agora a possibilidade da digitação de um número de tipo inválido. Aproveite e crie também uma função chamada leiaFloat() com a mesma funcionalidade.
+
+- exe114  =  Crie um código em Python que teste se o site Pudim está acessivel pelo computador usado. 
+ 
+- exe115 = Crie um pequeno sistema modularizado que permita cadastrar pessoas pelo seu nome e idade em um arquivo de texto simples.
+  
+  - O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas. 
